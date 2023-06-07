@@ -5,7 +5,7 @@ const path = require('path');
 //Configura el directorio de archivos estáticos en la carpeta public
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Ruta para mostrar el formulario de SurveyJS
+// Ruta para mostrar el formulario de SurveyJS en navegador
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
